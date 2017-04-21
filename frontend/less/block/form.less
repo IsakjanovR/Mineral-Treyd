@@ -1,0 +1,93 @@
+.form {
+  padding: 10px;
+  color: @body-color;
+  background-color: @white;
+  text-align: center;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.form__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form__input,
+.form__message {
+  padding: 10px;
+  background-color: @bg-input;
+  font-size: 14px;
+  line-height: 18px;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid #909090;
+  }
+}
+
+.form__input {
+  margin-bottom: 10px;
+}
+
+.form__message {
+  height: 100px;
+  resize: none;
+}
+
+@media (min-width: 420px) {
+  .form {
+    padding: 40px 50px 30px;
+    text-align: left;
+  }
+
+  .form__title {
+    margin: 0;
+    line-height: 30px;
+  }
+
+  .form__subtitle {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .form__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 35px;
+  }
+
+  .form__input,
+  .form__message {
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+  }
+
+  .form__input {
+    width: 330px;
+    margin-bottom: 35px;
+  }
+
+  .form__message {
+    flex-grow: 1;
+    height: 125px;
+  }
+}

@@ -1,0 +1,27 @@
+.btn {
+  width: 240px;
+  padding: 10px;
+  font-weight: 700;
+  color: @white;
+  background-color: @yellow;
+  text-transform: uppercase;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    box-shadow: inset 0 3px 0 0 #CB9B00;
+  }
+}
+
+@media (min-width: 420px) {
+  .btn {
+    width: 200px;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
